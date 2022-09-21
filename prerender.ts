@@ -1,7 +1,4 @@
 import fs from "fs";
-import ReactDOMServer from 'react-dom/server'
-import React, { createElement } from "react";
-import App from "./src/App";
 
 const entryPointRelativePath = 'dist/index.html'
 
