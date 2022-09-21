@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && ts-node-esm prerender.ts",
+    "build": "tsc && vite build && npm run build:server && ts-node-esm prerender.ts",
+    "prerender": "ts-node-esm prerender.ts",
+    "build:server": "vite build --ssr src/entry-server.jsx --outDir dist/server",
     "preview": "vite preview"
   },
   "dependencies": {
